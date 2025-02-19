@@ -13,7 +13,7 @@
     <!-- this is the title of the page that the viewer will see -->
     <title> Secret Message</title>
     <!-- This is the way to add a link you external style sheet so that you can add styling to your web page -->
-    <link href="./style.css" rel="stylesheet">
+    <link href="../CSS/smessage-style.css" rel="stylesheet">
     <!-- This is the end of the head tag  -->
 </head>
 <!-- I the body is the only place where people/ viewer can see you code. This is where we are going to have all of the content in the website.-->
@@ -33,8 +33,42 @@
           </nav>
     </header>
 
- <script src="secet-message"> </script>
 
+
+    <h2> Welcome to the Secret Message revealer! </h2>
+
+
+    <p> Please follow the set instructions to see the secret message</p>
+
+    <form>
+        <label for="message">
+            Please enter your name to see the secret message:
+        </label>
+        </br>       
+        </br>
+        <!-- The default value of a input is text -->
+        <input type="text" for="message" name="fname" id="firstName" placeholder="First Name"/>
+        <input type="text" for="message" name="lname" id="lastName" placeholder="Last Name"/>
+        </br>           
+        </br>
+    </form>
+
+
+
+    <button onclick="theName()"> Submit </button>
+
+
+
+    <footer>
+        Jerrod Bolton <br>
+        University of Advancing Technology <br>
+        2625 W Baseline Rd, <br>
+        Tempe, AZ 85283 <br>
+    </footer>
+
+
+<!-- This is here to link a JS Page -->
+<script src="../ JS/smessage.js"> </script>
 </body>
 
 </html> 

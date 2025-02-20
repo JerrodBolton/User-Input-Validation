@@ -10,19 +10,27 @@ let theName = () => {
   //  this was test to see if you have done the right thing
   console.log(`The first name of the user is: ${firstName}`);
   console.log(`The last name of the user is: ${lastName}`); 
-  theUerName = firstName + ""+ lastName; 
+  theUerName = firstName + "" + lastName; 
   console.log(theUerName);
   return theUerName;
    
 };
 
 let verification = () => {
-    if (theName().length > 20) {
+    if(theName().length > 20) {
     // This is a warning message to the user
         alert("The name is too long, please enter a name with less than 20 characters");
-    
+    //
+    }
+
 }
-// Check if the variable has more than >20 characters and give a warning – do not continue the program if invalid.
+
+let zipCode = () => {
+ let userZipCode = document.getElementById('zip-code').value;
+ console.log(`The user's zip code is: ${userZipCode}`);
+
+}
+// Check if the variable has more than > 20 characters and give a warning – do not continue the program if invalid.
 // A text box input for the user's zip code
 // Check if the zip code is valid and contains just 5 digits – do not continue the program if invalid
 // If the inputs are valid, show the user the secret message from the website.
@@ -36,4 +44,6 @@ let verification = () => {
 
 let secretMessage = () => {
   console.log(`The name of the user is: ${theName()}`);
+    console.log(`The zip code of the user is: ${zipCode()}`);
+
 };
